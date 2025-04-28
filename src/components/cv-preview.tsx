@@ -26,7 +26,8 @@ export function CVPreview({ cvData, template }: CVPreviewProps) {
   };
 
   return (
-    <div className="cv-preview-container bg-background text-foreground text-sm" id="cv-preview">
+    // The div with id="cv-preview" is crucial for html2canvas targeting
+    <div id="cv-preview" className="cv-preview-container bg-background text-foreground text-sm">
       {renderTemplate()}
     </div>
   );
